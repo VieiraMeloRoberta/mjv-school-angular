@@ -1,0 +1,39 @@
+.container {
+  width: 80%;
+  margin-left: 15%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraphy1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraphy {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+}
+h3 {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.text {
+  display: inline-block;
+  width: 40%;
+  margin: 1em;
+  margin-left: 5%;
+}
+
+.text span {
+  font-weight: bold;
+}
