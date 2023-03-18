@@ -1,0 +1,10 @@
+<!--INTERPOLAÇÃO-->
+<h1>{{ titulo }}</h1>
+
+<div>
+  <p>Descrição do produto: {{ produto.descricao }}</p>
+  <p>Preço: {{ produto.preco }}</p>
+  <p>Quantidade: {{ produto.quantidade }}</p>
+  <p>Preço com Desconto: {{ precoComDesconto(produto.preco) }}</p>
+  <img src="{{produto.imagem}}" width="250px" height="250px" alt="">
+</div>
