@@ -1,10 +1,62 @@
 <!--INTERPOLAÇÃO-->
-<h1>{{ titulo }}</h1>
+<section class="filme">
+  <h2 class="heading">
+    <i>{{ titulo }}</i>
+  </h2>
+  <div class="filme-container">
+    <div class="filme-box">
+      <div>
+        <p><strong>Descrição do produto:</strong>
+          {{ produto.descricao }}
+        </p>
+        <p><strong>Preço:</strong>
+          {{ produto.preco }}
+        </p>
+        <p><strong>Quantidade:</strong>
+          {{ produto.quantidade }}
+        </p>
+        <p>
+          <strong>Preço com Desconto:</strong>
+          {{ precoComDesconto(produto.preco) }}
+        </p>
+        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
+      </div>
+    </div>
 
-<div>
-  <p>Descrição do produto: {{ produto.descricao }}</p>
-  <p>Preço: {{ produto.preco }}</p>
-  <p>Quantidade: {{ produto.quantidade }}</p>
-  <p>Preço com Desconto: {{ precoComDesconto(produto.preco) }}</p>
-  <img src="{{produto.imagem}}" width="250px" height="250px" alt="">
-</div>
+    <div class="filme-box">
+      <div>
+        <p><strong>Descrição do produto:</strong>
+          {{ produto.descricao }}
+        </p>
+        <p><strong>Preço:</strong>
+          {{ produto.preco }}
+        </p>
+        <p><strong>Quantidade:</strong>
+          {{ produto.quantidade }}
+        </p>
+        <p>
+          <strong>Preço com Desconto:</strong>
+          {{ precoComDesconto(produto.preco) }}
+        </p>
+        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
+      </div>
+    </div>
+
+    <div class="filme-box">
+      <div>
+        <p><strong>Descrição do produto:</strong>
+          {{ produto.descricao }}
+        </p>
+        <p><strong>Preço:</strong>
+          {{ produto.preco }}
+        </p>
+        <p><strong>Quantidade:</strong> {{ produto.quantidade }}</p>
+        <p>
+          <strong>Preço com Desconto:</strong>
+          {{ precoComDesconto(produto.preco) }}
+        </p>
+        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
