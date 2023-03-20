@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 1%;
+  background: rgb(155, 155, 195);
+  //background: rgb(183, 199, 242);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  width: 98%;
+}
+
+.logo {
+  padding-left: 10px;
+  display: flex;
+  cursor: pointer;
+}
+.navbar a {
+  font-size: 1.7rem;
+  color: #211f1f;
+  margin: 0.1em;
+  transition: 0.3s;
+  padding: 0.5em;
+}
+.navbar a:hover,
+.navbar a:active {
+  color: #fff;
+}
