@@ -1,0 +1,43 @@
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+
+.filme h2 {
+  margin-bottom: 2rem;
+}
+.filme-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin: 3rem;
+}
+
+.filme-container .filme-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgb(183, 199, 242);
+  overflow: hidden;
+  display: flex;
+}
+h3 {
+  font-size: 1rem;
+  border-bottom: solid;
+}
+
+.filme-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 110%;
+  //background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(69, 19, 6));
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.filme-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
