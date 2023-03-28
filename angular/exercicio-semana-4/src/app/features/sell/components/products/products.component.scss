@@ -1,0 +1,67 @@
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.search {
+  padding-left: 50px;
+
+  input {
+    height: 20px;
+    width: 330px;
+    font-size: 14px;
+  }
+}
+
+.produto h2 {
+  margin-bottom: 2rem;
+}
+.produto-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin: 3rem;
+  margin-bottom: 70px;
+}
+
+.produto-container .produto-box {
+  position: relative;
+
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgb(183, 199, 242);
+  overflow: hidden;
+  display: flex;
+}
+h3 {
+  font-size: 1rem;
+  //border-bottom: solid;
+  margin-top: -50px;
+}
+
+.produto-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 110%;
+
+  text-align: center;
+  padding: 0 3rem;
+
+  flex-direction: column;
+  flex: 1;
+}
+
+.produto-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.em-estoque {
+  color: green;
+}
+
+.falta-estoque {
+  color: red;
+}
