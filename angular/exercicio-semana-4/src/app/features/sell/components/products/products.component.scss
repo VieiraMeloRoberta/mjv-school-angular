@@ -28,18 +28,20 @@
 
 .produto-container .produto-box {
   position: relative;
-
+  flex-direction: column;
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgb(183, 199, 242);
   overflow: hidden;
   display: flex;
 }
+
 h3 {
   font-size: 1rem;
-  //border-bottom: solid;
   margin-top: -50px;
 }
-
+img{
+  margin: 20px;
+}
 .produto-box {
   position: absolute;
   top: 0;
@@ -65,3 +67,4 @@ h3 {
 .falta-estoque {
   color: red;
 }
+

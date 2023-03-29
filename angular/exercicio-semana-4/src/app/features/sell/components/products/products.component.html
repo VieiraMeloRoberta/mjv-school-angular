@@ -12,6 +12,7 @@
   <div *ngFor="let produto of produtos" class="produto-container">
     <div class="produto-box">
       <div>
+        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
         <p (click)="clicouTag()">
           <strong>Descrição do produto:</strong>
           {{ produto.descricao }}
@@ -28,8 +29,6 @@
           <strong>Preço com Desconto:</strong>
           {{ precoComDesconto(produto.preco) }}
         </p>
-        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
-
         <p
           [ngClass]="{
             'em-estoque': produto.disponivel,
@@ -39,9 +38,23 @@
           {{ produto.disponivel ? "Em estoque" : "Produto em falta" }}
         </p>
 
-        <button *ngIf="produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao" (click)="obterPrecoDesconto()">Obter Desconto de 10%</button>
+        <button
+          *ngIf="
+            produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao
+          "
+          (click)="obterPrecoDesconto()"
+        >
+          Obter Desconto de 10%
+        </button>
 
-        <button *ngIf="produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao" (click)="comprar()">Comprar</button>
+        <button
+          *ngIf="
+            produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao
+          "
+          (click)="comprar()"
+        >
+          Comprar
+        </button>
         <hr />
         <button (click)="exibeProdutosSimNao()">Exibe Produto</button>
       </div>
@@ -49,7 +62,8 @@
 
     <div class="produto-box">
       <div>
-        <p>
+        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
+        <p (click)="clicouTag()">
           <strong>Descrição do produto:</strong>
           {{ produto.descricao }}
         </p>
@@ -65,7 +79,6 @@
           <strong>Preço com Desconto:</strong>
           {{ precoComDesconto(produto.preco) }}
         </p>
-        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
 
         <p
           [ngClass]="{
@@ -76,9 +89,23 @@
           {{ produto.disponivel ? "Em estoque" : "Produto em falta" }}
         </p>
 
-        <button *ngIf="produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao" (click)="obterPrecoDesconto()">Obter Desconto de 10%</button>
+        <button
+          *ngIf="
+            produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao
+          "
+          (click)="obterPrecoDesconto()"
+        >
+          Obter Desconto de 10%
+        </button>
 
-        <button *ngIf="produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao" (click)="comprar()">Comprar</button>
+        <button
+          *ngIf="
+            produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao
+          "
+          (click)="comprar()"
+        >
+          Comprar
+        </button>
         <hr />
         <button (click)="exibeProdutosSimNao()">Exibe Produto</button>
       </div>
@@ -86,7 +113,8 @@
 
     <div class="produto-box">
       <div>
-        <p>
+        <img src="{{ produto.imagem }}" width="230px" height="230px" alt="" />
+        <p (click)="clicouTag()">
           <strong>Descrição do produto:</strong>
           {{ produto.descricao }}
         </p>
@@ -94,12 +122,14 @@
           <strong>Preço:</strong>
           {{ produto.preco }}
         </p>
-        <p><strong>Quantidade:</strong> {{ produto.quantidade }}</p>
+        <p>
+          <strong>Quantidade:</strong>
+          {{ produto.quantidade }}
+        </p>
         <p>
           <strong>Preço com Desconto:</strong>
           {{ precoComDesconto(produto.preco) }}
         </p>
-        <img src="{{ produto.imagem }}" width="250px" height="250px" alt="" />
 
         <p
           [ngClass]="{
@@ -110,9 +140,23 @@
           {{ produto.disponivel ? "Em estoque" : "Produto em falta" }}
         </p>
 
-        <button *ngIf="produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao" (click)="obterPrecoDesconto()">Obter Desconto de 10%</button>
+        <button
+          *ngIf="
+            produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao
+          "
+          (click)="obterPrecoDesconto()"
+        >
+          Obter Desconto de 10%
+        </button>
 
-        <button *ngIf="produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao" (click)="comprar()">Comprar</button>
+        <button
+          *ngIf="
+            produto.disponivel ? exibeProdutosSimNao : !exibeProdutosSimNao
+          "
+          (click)="comprar()"
+        >
+          Comprar
+        </button>
         <hr />
         <button (click)="exibeProdutosSimNao()">Exibe Produto</button>
       </div>

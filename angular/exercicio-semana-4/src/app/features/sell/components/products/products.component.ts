@@ -8,7 +8,6 @@ import { Product } from '../../models/product.model';
 })
 export class ProductsComponent implements OnInit {
   titulo = 'Lista de Produtos';
-  /*subtitulo = "Busca de Produtos Por nome";*/
 
   exibeProduto = true;
 
@@ -37,19 +36,12 @@ export class ProductsComponent implements OnInit {
         'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
       disponivel: false,
     },
-    {
-      descricao: 'Playstation 5',
-      preco: 4500,
-      quantidade: 1,
-      imagem:
-        'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
-      disponivel: true,
-    },
   ];
   constructor() {}
 
   ngOnInit(): void {
-    console.log('teste');
+    for (const iterator of this.produtos) {
+    }
   }
   precoComDesconto(preco: number) {
     return preco * 0.9;
