@@ -19,7 +19,8 @@
 }
 .produto-container {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 1fr);
+
   align-items: center;
   gap: 2.5rem;
   margin: 3rem;
@@ -29,35 +30,44 @@
 .produto-container .produto-box {
   position: relative;
   flex-direction: column;
-  border-radius: 2rem;
+  border: 2rem;
   box-shadow: 0 0 1rem rgb(183, 199, 242);
-  overflow: hidden;
-  display: flex;
+  display: grid;
 }
 
 h3 {
   font-size: 1rem;
   margin-top: -50px;
 }
-img{
-  margin: 20px;
-}
-.produto-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 110%;
 
-  text-align: center;
-  padding: 0 3rem;
-
+.card-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-direction: column;
-  flex: 1;
+  margin: 20px;
+  padding-right: 20px;
 }
 
-.produto-layer p {
-  font-size: 1.6rem;
-  margin: 0.3rem 0 1rem;
+.item-produto {
+  border: 2rem;
+  box-shadow: 0 0 1rem rgb(183, 199, 242);
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.item-produto button {
+  box-shadow: 0 0 1rem rgb(37, 40, 46);
+  width: 300px;
+  height: 30px;
+  margin: 0.2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 0.1rem solid rgb(110, 106, 106);
+
+  border-radius: 4rem;
+  color: #141313;
 }
 
 .em-estoque {
@@ -67,4 +77,3 @@ img{
 .falta-estoque {
   color: red;
 }
-
