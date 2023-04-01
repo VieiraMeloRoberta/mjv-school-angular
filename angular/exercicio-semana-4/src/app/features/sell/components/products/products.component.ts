@@ -11,9 +11,9 @@ export class ProductsComponent implements OnInit {
 
   exibeProduto = true;
 
-  produto = {
-    descricao: 'Playstation 5',
-    preco: 4500,
+  produto1 = {
+    descricao: 'Playstation 5 1TB',
+    preco: 4500.0,
     quantidade: 1,
     imagem:
       'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
@@ -21,8 +21,24 @@ export class ProductsComponent implements OnInit {
 
   produtos: Array<Product> = [
     {
+      descricao: 'Playstation 5 1TB',
+      preco: 4500.0,
+      quantidade: 0,
+      imagem:
+        'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
+      disponivel: false,
+    },
+    {
       descricao: 'Playstation 5',
-      preco: 4500,
+      preco: 4500.0,
+      quantidade: 2,
+      imagem:
+        'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
+      disponivel: true,
+    },
+    {
+      descricao: 'Playstation 5',
+      preco: 4500.0,
       quantidade: 1,
       imagem:
         'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
@@ -30,8 +46,24 @@ export class ProductsComponent implements OnInit {
     },
     {
       descricao: 'Playstation 5 1TB',
-      preco: 4500,
+      preco: 4500.0,
+      quantidade: 2,
+      imagem:
+        'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
+      disponivel: true,
+    },
+    {
+      descricao: 'Playstation 5 1TB',
+      preco: 4500.0,
       quantidade: 1,
+      imagem:
+        'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
+      disponivel: true,
+    },
+    {
+      descricao: 'Playstation 5 1TB',
+      preco: 4500.0,
+      quantidade: 0,
       imagem:
         'https://cdn.awsli.com.br/600x450/2443/2443989/produto/189093503e1b743af49.jpg',
       disponivel: false,
@@ -46,26 +78,24 @@ export class ProductsComponent implements OnInit {
   precoComDesconto(preco: number) {
     return preco * 0.9;
   }
-  obterPrecoDesconto() {
-    this.produto.preco = this.produto.preco * 0.9;
+
+  obterDesconto() {
+    return (this.produto1.preco = this.produto1.preco * 0.9);
   }
 
   comprar() {
-    alert('Produto comprado com sucesso!');
-  }
-
-  clicouTag() {
-    alert('Você clicou em uma tag');
+    alert('Produto comprado!');
   }
 
   passouMouse() {
-    alert('Você passou o mouse em cima de uma tag');
+    alert('Aproveite o desconto!');
   }
 
   pressinouTecla(event: any) {
     console.log(event.target.value);
   }
-  exibeProdutosSimNao() {
+
+  exibeProdutoSimNao() {
     this.exibeProduto = !this.exibeProduto;
   }
 }
