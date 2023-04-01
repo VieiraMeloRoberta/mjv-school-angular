@@ -1,0 +1,28 @@
+header {
+  //background-color: rgb(234, 48, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding: 10px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    height: 25px;
+}
+ul {
+    display: flex;
+    //width: 100%;
+    //gap: 5px;
+
+    justify-content: space-between;
+    //align-items: center;
+    //z-index: 100;
+    width: 30%;
+    //position: absolute;
+
+    margin-left: 5rem;
+
+    padding: 1rem 1%;
+}
