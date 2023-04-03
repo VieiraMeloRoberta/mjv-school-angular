@@ -1,0 +1,13 @@
+<section class="colabs">
+  <h1>{{ title }}</h1>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let colab of colab">
+      <div class="avatar">
+        <img src="{{ colab.imagem }}" alt="" />
+      </div>
+      <h2>{{ colab.nome }}</h2>
+      <p>{{ colab.cargo }}</p>
+    </div>
+  </div>
+</section>
