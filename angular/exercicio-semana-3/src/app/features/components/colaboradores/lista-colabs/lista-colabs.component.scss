@@ -1,0 +1,61 @@
+.colabs {
+  margin: auto;
+  color: #000;
+  padding: 6%;
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      height: 300px;
+      border-radius: 3px;
+      border: 2px solid rgb(161, 181, 106);
+      padding: 20px;
+      color: #000;
+      box-shadow: 1px 4px 10px rgb(161, 181, 106);
+
+      .avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid rgb(161, 181, 106);
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      h2 {
+        margin-bottom: 5px;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 16px;
+        color: rgb(161, 181, 106);
+      }
+    }
+  }
+}
