@@ -7,7 +7,13 @@
 }*/
 
 
-function editProperty<Tbase, Kbase extends keyof Tbase, Vbase extends Tbase[Kbase]>(obj: Tbase, property: Kbase, value: Vbase): void {
+/*function editProperty<Tbase, Kbase extends keyof Tbase, Vbase extends Tbase[Kbase]>(obj: Tbase, property: Kbase, value: Vbase): void {
     obj[property] = value
 }
 editProperty({ nome: "alan" }, "nome", "a")
+*/
+
+export function editProperty<O , P extends keyof O, V extends O[P]>(obj: O, property: P, value: V): void {
+    obj[property] = value
+}
+editProperty({ nome: "alan", age: 32 }, "age", 10)
