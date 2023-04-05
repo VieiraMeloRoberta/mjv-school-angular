@@ -4,7 +4,7 @@
     email?: string;
     registered: boolean;
 }
-*/
+
 
 export type UserRegistered = {
     name: string;
@@ -13,4 +13,25 @@ export type UserRegistered = {
   }
   
 
-  export type User = UserRegistered 
+  export type User = UserRegistered */
+
+  export type RegisteredUser = {
+    name: string;
+    email: string;
+    registered: true;
+}
+
+export type GuestUser = {
+    name: string;
+    registered: false;
+}
+
+export type User = RegisteredUser | GuestUser
+
+function testUser(user: User){
+    if(user.registered){
+        user.email
+    }else {
+        user
+    }
+}

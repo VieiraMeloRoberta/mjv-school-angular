@@ -15,3 +15,16 @@ export type User = GuestUser | AuthenticatedUser;
 function isAuthenticated (user: GuestUser | AuthenticatedUser): user is AuthenticatedUser{
     return 'id' in user;
 }
+
+export function isGuestUser(user: User): user is GuestUser{
+    return user.type === 'guest';
+}
+export function isAuthenticatedUser(user: User): user is AuthenticatedUser{
+    return user.type === 'user';
+}
+function testGuard(user: User){
+    if(isGuestUser(user)){
+}else{
+
+}
+}

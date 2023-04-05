@@ -1,6 +1,6 @@
 // refatore esses tipos utilizando um tipo genérico
 
-export type ItemTexto = {
+/*export type ItemTexto = {
     valor: string;
 }
 
@@ -11,3 +11,13 @@ export type ItemNumerico = {
 export type Item<T> = {
     valor: T;
 }
+*/
+
+export type Item<T> = {
+    valor: T;
+}
+
+export type ItemTexto = Item<string>
+
+export type ItemNumerico = Item<number>
+
