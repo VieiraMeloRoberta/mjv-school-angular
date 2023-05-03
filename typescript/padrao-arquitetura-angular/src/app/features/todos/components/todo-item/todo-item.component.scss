@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  align-items: center;
+  border: 1px purple solid;
+  padding: 6px;
+}
+
+.todo-item-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item-spinner {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
