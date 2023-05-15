@@ -1,0 +1,59 @@
+.product__container {
+  display: flex;
+  column-gap: 5px;
+  margin: 30px 90px;
+  padding: 40px;
+}
+
+.image {
+  width: 48%;
+  height: 10px;
+}
+
+.product__container img {
+  margin: 8rem;
+  margin-top: -1rem;
+  height: 30rem;
+  width: 90%;
+  padding: 30px;
+}
+
+.name {
+  padding-right: 5px;
+  margin: 40px 0 0 0;
+  font-size: 36px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 30px 0 30px;
+  margin-top: 10px;
+}
+
+.description {
+  margin: 90px;
+  padding: 0;
+  flex: 1;
+}
+
+p {
+  margin: 30px 0;
+  margin-top: -10px;
+}
+
+button {
+  color: #fff;
+  background: rgb(62, 43, 43);
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+

@@ -1,0 +1,12 @@
+<section class="product__container">
+  <div class="image">
+    <img src="{{ product.productImg }}" />
+  </div>
+  <div class="description">
+    <h2 class="name">{{ product.productName }}</h2>
+    <h3 class="price">{{ product.productPrice | currency: "R$" }}</h3>
+    <p>Estoque disponivel</p>
+    <a routerLink="/cart"> <button type="button">finalizar compra</button></a
+    >
+  </div>
+</section>
