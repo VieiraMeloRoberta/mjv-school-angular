@@ -1,0 +1,25 @@
+<header>
+  <div class="container">
+    <a routerLink="" class="logo">
+      <img src="/assets/img/logo.png" width="50px" alt="logo"
+    /></a>
+    <nav>
+      <ul>
+        <input type="text" placeholder="" />
+        <button><i class="bi bi-search"></i></button>
+        <li>
+          <a
+            routerLink=""
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+
+        <li>
+          <a routerLink="contact" routerLinkActive="active-link">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

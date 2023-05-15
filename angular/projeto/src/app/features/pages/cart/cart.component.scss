@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  column-gap: 20px;
+
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 30rem;
+  margin: 4rem;
+}
+
+button {
+  color: #fff;
+  background:rgb(62, 43, 43);
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.sub {
+  color: rgb(163, 111, 160);
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
