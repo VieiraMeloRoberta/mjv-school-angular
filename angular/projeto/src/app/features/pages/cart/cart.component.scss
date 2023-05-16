@@ -1,7 +1,6 @@
 .container {
   display: flex;
   column-gap: 20px;
-
 }
 
 .image {
@@ -20,7 +19,7 @@ img {
 
 button {
   color: #fff;
-  background:rgb(62, 43, 43);
+  background: rgb(62, 43, 43);
   border: none;
   font-size: 1.2rem;
   padding: 1rem;
@@ -38,4 +37,11 @@ button:hover {
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .product__container {
+    display: flex;
+    align-items: center;
+    width: 10%;
+  }
 }

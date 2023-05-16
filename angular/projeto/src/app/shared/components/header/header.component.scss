@@ -2,8 +2,6 @@ header {
   position: relative;
   background: #baafc4;
   padding: 0;
-
-  // border-bottom: 1px solid rgb(62, 43, 43);
 }
 
 a {
@@ -79,4 +77,21 @@ div button {
 div button:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  input{
+    width: 15rem;
+
+  }
+  nav {
+    height: 50px;
+
+  }
+
+  li{
+   margin-left: 5rem;
+
+
+  }
 }

@@ -28,7 +28,7 @@ export class DetailsService {
       productDetails: 'React Native | Flutter | iOS e Swift | Android',
       productPrice: 85,
       productImg:
-        'https://i.pinimg.com/originals/b8/ae/b1/b8aeb1b09d6c6529cbcf66b414052d57.png', //https://png.pngtree.com/element_our/sm/20180518/sm_5afec561a678f.jpg
+        'https://i.pinimg.com/originals/b8/ae/b1/b8aeb1b09d6c6529cbcf66b414052d57.png',
     },
     {
       id: 4,
