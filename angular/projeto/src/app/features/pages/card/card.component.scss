@@ -57,3 +57,11 @@ button:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .image {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    margin: 5px;
+  }
+}
