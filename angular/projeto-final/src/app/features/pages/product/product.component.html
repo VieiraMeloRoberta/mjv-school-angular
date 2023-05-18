@@ -1,0 +1,66 @@
+<div class="banner">
+  <div class="content">
+    <h2 class="text">
+      Faça Parte do Maior <br />
+      Ecossistema Tech do Brasil.
+    </h2>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <h1 class="text-center">
+    A maior escola online de tecnologia para sua
+    <span class="sub">formação.</span>
+  </h1>
+
+  <div class="row mt-5">
+    <div class="col-lg-4 mt-2">
+      <div class="box">
+        <i class="fas fa-layer-group fa-3x"></i>
+        <h1>Navegue sua carreira</h1>
+        <p>Toda semana novo lançamento e melhoria constante.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-2">
+      <div class="box">
+        <i class="fas fa-book-open fa-3x"></i>
+        <h1>Aprofunde-se de vez</h1>
+        <p>Garantimos conhecimento com profundidade para seu futuro.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-2">
+      <div class="box">
+        <i class="fas fa-code fa-3x"></i>
+        <h1>Conteúdo completo atualizado</h1>
+        <p>Faça parte de uma comunidade de apaixonados pelo digital.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 class="text-center">
+  Aproveite a promoção vai até hoje
+  <span class="sub"> {{ dataHoje | date : "dd/MMMM/yyyy" }} </span>
+</h1>
+
+<section class="product-list">
+  <div class="product-list__card" *ngFor="let produto of produtos">
+    <a routerLink="/produtos/{{ produto.id }}" class="product-list__link">
+      <img [src]="produto.imagem" />
+      <h2 class="product-item__name">
+        {{ produto.descricao }}
+      </h2>
+      <p class="product-item__price">
+        {{ produto.preco | currency : "R$" }}
+      </p>
+      <p class="product-item__price-description">
+        {{ produto.descricaoPreco }}
+      </p>
+      <button class="product-item__buy-button" type="button">
+        Comprar curso
+      </button>
+    </a>
+  </div>
+</section>

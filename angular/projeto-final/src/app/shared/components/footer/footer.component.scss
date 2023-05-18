@@ -1,0 +1,49 @@
+footer {
+  overflow: hidden;
+  position: sticky;
+  top: 100%;
+  background-color: #523961;
+  padding: 5px;
+  margin-top: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul a {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 5px;
+  font-size: 17px;
+}
+a:hover {
+  cursor: pointer;
+  color: #c3bbc9;
+}
+
+i {
+  padding: 0px 10px;
+}
