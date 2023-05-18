@@ -10,13 +10,13 @@ import { ProductDescritionComponent } from './features/pages/product/product-des
 
 
 const routes: Routes = [
-
-  {path:'produtos',  component:ProductComponent}, //produtos
+  {path:'', component:ProductComponent},
+  {path:'produtos', component:ProductComponent}, //produtos
 
   {path:'carrinho', component:CartComponent}, //carrinho
   {path:'contato', component:ContactComponent},//
   {path:'produtos/:id', component:ProductDescritionComponent},//
-  {path: "", component: NotFoundComponent}
+  {path: "**", component: NotFoundComponent}
 ];
 
 

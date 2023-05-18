@@ -2,7 +2,8 @@
   font-size: 44px;
  // color: var(--gray);
   font-weight: 700;
-  padding: 8px 0;
+  padding: 8px;
+  margin: 50px;
 }
 
 li {
@@ -12,8 +13,11 @@ li {
   overflow: hidden;
   margin: 10px 0;
   height: 100px;
+  width: 80rem;
   align-items: center;
   justify-content: space-between;
+ // padding: 10px;
+  margin: 50px;
 }
 
 img {
@@ -37,9 +41,10 @@ img {
 
 .cart-total {
   font-size: 24px;
-  color: var(--gray);
+  color: rgb(100, 4, 100);
   font-weight: 700;
   padding: 8px 0;
+  margin: 50px;
 }
 
 input {
@@ -53,8 +58,11 @@ input {
   color: white;
   padding: 10px;
   font-size: 22px;
-  margin-bottom: 10px;
+//margin-bottom: -50px;
   transition: 0.3s all;
+  border-radius: 4px;
+  margin-left: 50px;
+  margin-top: -90px;
 }
 
 .buy-button:hover {

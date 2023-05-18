@@ -5,14 +5,14 @@ import {MatSnackBar} from '@angular/material/snack-bar';
   providedIn: 'root'
 })
 export class NotFoundService {
- snackBar: any;
+// snackBar: any;
 
-  constructor() { }
+ // constructor() { }
 
-  /*
+  /* */
     constructor(
     private snackBar: MatSnackBar) { }
- */
+
 
   notificar(mensagem:string){
     this.snackBar.open(mensagem, "Ok",{
