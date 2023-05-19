@@ -1,7 +1,5 @@
 .main-header {
   padding: 10px;
-//margin-top: -20px;
-
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -9,19 +7,16 @@
   column-gap: 40px;
   background-color: rgb(167, 121, 181);
 }
-.logo{
- padding-left: 5rem;
+.logo {
+  padding-left: 5rem;
 }
-img{
- /* height: 1rem;*/
+img {
   width: 5rem;
-  padding: 5px;
+  padding: 2px;
 }
 .main-header__title {
   font-size: 80px;
- // letter-spacing: -1.5px;
 }
-
 
 .main-header__menu ul {
   display: flex;
@@ -37,11 +32,9 @@ img{
   font-weight: 400;
   font-size: 22px;
   text-decoration: none;
-  //transition: all .3s ease-in-out;
 }
 
 .main-header__menu a:hover {
- // background-color: var(--blue);
   color: #000;
 }
 

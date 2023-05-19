@@ -1,32 +1,26 @@
 import { Component } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  styleUrls: ['./search.component.scss'],
 })
 export class SearchComponent {
-  descricao = "";
+  descricao = '';
 
-  constructor(
-    private router: Router
-  ){}
+  constructor(private router: Router) {}
 
-  ngOnInit(): void{
-
-  }
+  ngOnInit(): void {}
 
   pesquisar() {
-
-    if(this.descricao){
-      this.router.navigate(["produtos"], {queryParams: {descricao: this.descricao}})
+    if (this.descricao) {
+      this.router.navigate(['produtos'], {
+        queryParams: { descricao: this.descricao },
+      });
       return;
     }
 
-      this.router.navigate(["produtos"]);
-
-
-
+    this.router.navigate(['produtos']);
   }
 }
