@@ -7,15 +7,15 @@
 
       <div class="product-description__container">
 
-          <h2 class="product__name">{{produto?.descricao}}</h2>
-          <h3 class="product__price">{{produto?.preco | currency: "R$"}}</h3>
+          <h2 class="name">{{produto?.descricao}}</h2>
+          <h3 class="price">{{produto?.preco | currency: "R$"}}</h3>
           <p>Estoque disponível</p>
           <label>
               Quantidade:
-              <input type="number" [(ngModel)]="quantidade"> <!--min="1"-->
+              <input type="number" [(ngModel)]="quantidade" min="1"> <!---->
               unidade(s)
           </label>
-          <p class="product_avaiability">
+          <p class="product">
               {{produto?.quantidadeEstoque}} unidades(s) em estoque
           </p>
           <button type="button" (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>

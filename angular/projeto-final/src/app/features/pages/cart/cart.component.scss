@@ -1,6 +1,5 @@
 .cart-title {
   font-size: 44px;
- // color: var(--gray);
   font-weight: 700;
   padding: 8px;
   margin: 50px;
@@ -16,7 +15,6 @@ li {
   width: 80rem;
   align-items: center;
   justify-content: space-between;
- // padding: 10px;
   margin: 50px;
 }
 
@@ -58,7 +56,6 @@ input {
   color: white;
   padding: 10px;
   font-size: 22px;
-//margin-bottom: -50px;
   transition: 0.3s all;
   border-radius: 4px;
   margin-left: 50px;
@@ -68,6 +65,5 @@ input {
 .buy-button:hover {
   background-color: rgb(156, 134, 134);
   cursor: pointer;
+  opacity: 0.9;
 }
-
-

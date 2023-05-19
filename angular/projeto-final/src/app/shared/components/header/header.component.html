@@ -1,38 +1,29 @@
 <header class="main-header">
   <h1 class="main-header__title">
-    <!--  <span class="main-header__title--blue">Proway</span>
-      <span class="main-header__title--orange">Computers</span>-->
-      <a routerLink="/produtos" class="logo">
-
-        <img src="/assets/img/logo.png" width="80px" alt="logo"
-      /></a>
+    <a routerLink="" class="logo">
+      <img src="/assets/img/logo.png" width="80px" alt="logo"
+    /></a>
   </h1>
   <app-search></app-search>
   <div class="container-menu">
-      <nav class="main-header__menu">
+    <nav class="main-header__menu">
+      <ul>
+        <li>
+          <a routerLink="/produtos">Produtos</a>
+        </li>
+        <li>
+          <a routerLink="/carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
 
-          <ul>
-              <li>
-                  <a routerLink="/produtos">Produtos</a>
-              </li>
-              <li>
-                  <a routerLink="/carrinho">
-                      <i class="fa-solid fa-cart-shopping"></i>
-
-                      <span class="badge-carrinho">{{cartService.obtemCarrinho().length}}</span>
-
-                  </a>
-
-              </li>
-              <li>
-                  <a routerLink="/contato">Contato</a>
-              </li>
-
-
-          </ul>
-
-      </nav>
-
+            <span class="badge-carrinho">{{
+              cartService.obtemCarrinho().length
+            }}</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/contato">Contato</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-
 </header>
