@@ -5,12 +5,12 @@
 ## 📝Descrição
 Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as tecnologias mais utilizadas no mercado e, ser uma plataforma fácil de usar intuitiva para o usuário final.
 
- <h1 align="center"> Home
+ <h1 align="center"> Produtos
  </h1>
  
 ![imagem](imagem.png)
 
- <h1 align="center"> Produtos
+ <h1 align="center"> Descrição dos produtos
  </h1>
 
 ![imagem](produto.png)
@@ -27,6 +27,12 @@ Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as te
  </h1>
 
 ![imagem](contato.png)
+
+## ✅Funcionalidades
+
+- Buscar produtos
+- Carrinho de compras
+
 
 #### 🚀Tecnologias utilizadas
 <div>
@@ -48,3 +54,5 @@ Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as te
 ```bash
   cd projeto
 ```
+---
+[Roberta Vieira de Melo](https://github.com/VieiraMeloRoberta)
