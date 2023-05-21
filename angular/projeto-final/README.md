@@ -10,7 +10,7 @@ Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as te
  
 ![imagem](imagem.png)
 
- <h1 align="center"> Descrição dos produtos
+ <h1 align="center"> Descrição do produto
  </h1>
 
 ![imagem](produto.png)
