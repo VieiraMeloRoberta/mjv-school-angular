@@ -1,8 +1,8 @@
  <h1 align="center"> 🛍️E-commerce
  </h1>
 
-
 ## 📝Descrição
+
 Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as tecnologias mais utilizadas no mercado e, ser uma plataforma fácil de usar intuitiva para o usuário final.
 
  <h1 align="center"> Produtos
@@ -15,26 +15,27 @@ Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as te
 
 ![imagem](produto.png)
 
-
  <h1 align="center"> Carrinho
  </h1>
 
 ![imagem](carrinho.png)
-
-
 
 <h1 align="center"> Contato
  </h1>
 
 ![imagem](contato.png)
 
-## ✅Funcionalidades
+### ✅ O que funciona
 
 - Buscar produtos
 - Carrinho de compras
 
+### ❌ O que não funciona
+
+- Contato
 
 #### 🚀Tecnologias utilizadas
+
 <div>
 <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -46,7 +47,6 @@ Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as te
 
 ## <h2>🔄Entre no diretório para criar projeto</h2>
 
-
 ```bash
   ng new projeto
 ```
@@ -54,5 +54,6 @@ Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as te
 ```bash
   cd projeto
 ```
----
+----
+
 [Roberta Vieira de Melo](https://github.com/VieiraMeloRoberta)
