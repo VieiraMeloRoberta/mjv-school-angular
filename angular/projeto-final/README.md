@@ -25,6 +25,8 @@ Este é um projeto para site e-commerce de cursos, com objetivo de mostrar as te
 
 ![imagem](contato.png)
 
+[Clique aqui]( https://mjv-school-angular-angular-ecommerce.vercel.app) para acessar o deploy do projeto
+
 ### ✅ O que funciona
 
 - Buscar produtos
