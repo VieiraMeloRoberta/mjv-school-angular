@@ -1,0 +1,31 @@
+<ng-container *ngTemplateOutlet="template || defaultTemplate;
+context: {
+  title: title,
+  subtitle: subtitle,
+  $implicit: title
+}"></ng-container>
+
+<div>
+  <ng-container *ngFor="let texto of textos">
+    <ng-container *ngTemplateOutlet="templateConteudo || defaultTemplateTexto;
+    context: {
+      $implicit: texto
+    }"></ng-container>
+  </ng-container>
+</div>
+
+
+<ng-template #defaultTemplate
+             let-default
+             let-titulo="title"
+             let-subtitulo="subtitle">
+  <h1>{{titulo}}</h1>
+  <div>{{subtitulo}}</div>
+
+  <div>{{default}}</div>
+</ng-template>
+
+<ng-template #defaultTemplateTexto
+             let-item>
+  <h6>{{item}}</h6>
+</ng-template>
