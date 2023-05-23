@@ -1,0 +1,9 @@
+<div>{{content}}</div>
+<div>Likes: {{likes}}</div>
+<div>Claps: {{claps}}</div>
+<div>Is Liked: {{isLiked}}</div>
+<div>Is Clapped: {{isClapped}}</div>
+<button (click)="toggleLike()">{{ isLiked ? 'UNLIKE' : 'LIKE'}}</button>
+
+<button (click)="clap.emit(entityId)"
+        [disabled]="isClapped">CLAP</button>
